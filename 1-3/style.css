@@ -1,4 +1,7 @@
 body {
     background-color: black;
     color: white;
+    vertical-align: middle;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
