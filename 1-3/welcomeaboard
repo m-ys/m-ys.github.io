@@ -5,8 +5,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body align = "center">
+<body>
 Welcome to the Galactic Express. </br>
 Where shall we go today?
+<body align = "center">
 </body>
 </html>
