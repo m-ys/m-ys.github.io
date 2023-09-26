@@ -1,2 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>welcome aboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body align = "center">
 Welcome to the Galactic Express. </br>
 Where shall we go today?
+</body>
+</html>
