@@ -62,7 +62,7 @@ a:link {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 200px;
+  width: 300px;
   background-color: none;
   color: gray;
   text-align: center;
