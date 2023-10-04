@@ -53,20 +53,30 @@ a:link {
     font-family:Arial, Helvetica, sans-serif, sans-serif;
 }
 
+#sceneContainer {
+  height: 100px;
+  width: 500px;
+  position: relative;
+}
 .content {
-  max-width: 500px;
-  width: 100%;
-  height: auto;
-  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .frame {
   z-index: 6;
   position:absolute;
+  width: 500px;
+  align: center;
+  animation: bounce 1s infinite;
 }
 .scene {
   z-index: 4;
   position: absolute;
+  width:500px;
+  align: center;
 }
 
 .tooltip {
@@ -113,13 +123,13 @@ a:link {
     to {
         background-position: -400% 0%;
     }
-}
+} */
  
 @keyframes bounce {
     from {
-        background-position: 0% 0%;
+        translate: 0% 0%;
     }
     to {
-        background-position: 0% 5%;
+      translate: 0% -3%;
     }
-} */
+}
