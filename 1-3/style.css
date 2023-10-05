@@ -11,6 +11,16 @@ body {
   background-color: black;
 
 } */
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+th, td , caption {
+  padding-right: 35px;
+  padding-left: 35px;
+  font-size:small;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 p {
     font-size: 14px;
