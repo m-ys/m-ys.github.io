@@ -45,12 +45,22 @@ a:link {
     text-decoration: underline;
   }
 
+#webring {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px;
+}
+
+.selectFormat {
+  font-size: 12px;
+  font-family:'Courier New', Courier, monospace;
+}
+
 #selectEnter {
     font-size: 12px;
     text-align: center;
     font-family:Arial, Helvetica, sans-serif, sans-serif;
-    animation: blink 4s infinite;
-    animation-fill-mode: both;
 }
 
 #selectStandard {
