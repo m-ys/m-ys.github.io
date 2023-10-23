@@ -1,120 +1,208 @@
 body {
-    background-color: black;
-    color: white;
-    vertical-align: middle;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    min-height: 100vh;
-    margin-bottom: 0;
+  background-color: black;
+  color: white;
+  vertical-align: middle;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  min-height: 100vh;
+  margin-bottom: 0;
 }
 
 #sceneContainer {
-    position: absolute;
-    left: calc(50vw - 500px);
-    top: 15%;
-    width: 1000px;
-    height: 500px;
-    background-color: darkslategrey;
-    overflow: hidden;
-  }
+  position: absolute;
+  left: calc(50vw - 500px);
+  top: 15%;
+  width: 1000px;
+  height: 500px;
+  background-color: darkslategrey;
+  overflow: hidden;
+}
 
 .scene {
-    z-index: 4;
-    position: absolute;
-    top: 10%;
-    left: 0;
-    width: 100%;
+  z-index: 4;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
 
-  }
+}
 
 .center {
-    width: 40vw;
-    height: 70vh;
-    margin-left: 30vw;
-    margin-top: 15vh;
-    z-index: 2;
-  }
+  width: 40vw;
+  height: 70vh;
+  margin-left: 30vw;
+  margin-top: 15vh;
+  z-index: 2;
+}
+
 
 .weather {
-    z-index: 5;
-    position: absolute;
-    left: calc(52vw - 500px);
-    top: 28%;
-    width: 140vw;
-    height: auto;
-    overflow: hidden;
-  }
-  
-.animation{
-    transition: 2.5s;
-  }
-  
-  #sibling1 {
-    width: 3vh;
-    height: 3vh;
-    float: left;
-    background-color: #79A4BD;
-    z-index:12;
-    position:fixed;
-    top: 5%;
-    margin: 5%;
-  }
-  /* #6894A6
-  #364F59 */
+  z-index: 5;
+}
 
-  #sibling2 {
-    width: 1000px;
-    height: 500px;
-    opacity: 0;
-  }
+.animation {
+  transition: 2.5s;
+}
 
-  #sibling2 img {
-    height: 140%;
-    width: auto;
-  }
-  #sceneContainer {
-    position: absolute;
-    left: calc(50vw - 500px);
-    top: 15%;
-    width: 1000px;
-    height: 750px;
-    background-color: black;
-    overflow: hidden;
-  }
-  
-  /* ~ selects sibling elements */
-  #sibling1:hover ~ #sibling2 {
-    opacity: 100%;
-  }
+#rainContainer {
+  z-index: 5;
+  position: absolute;
+  left: calc(50vw - 500px);
+  top: 21.5%;
+  width: 1000px;
+  height: 560px;
+  background-color: none;
+  opacity: 100%;
+  overflow: hidden;
+}
 
-  
-  #controller {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    float: left;
-  }
-  
-  /* + selects only the next item */
-  /* #controller:hover + .reciever {
+#rainsib1 {
+  width: 3vh;
+  height: 3vh;
+  float: left;
+  background-color: #79A4BD;
+  z-index: 12;
+  position: fixed;
+  top: 5%;
+  margin: 5%;
+}
+
+#rainsib2 {
+  width: 1000px;
+  height: 500px;
+  opacity: 0;
+}
+
+#rainsib2 img {
+  object-fit: contain;
+  scale: 1.2;
+}
+#snowContainer {
+  z-index: 5;
+  position: absolute;
+  left: calc(50vw - 500px);
+  top: 21.5%;
+  width: 1000px;
+  height: 560px;
+  background-color: none;
+  opacity: 100%;
+  overflow: hidden;
+}
+
+#snowsib1 {
+  width: 3vh;
+  height: 3vh;
+  float: left;
+  background-color: #6894A6;
+  z-index: 12;
+  position: fixed;
+  top: 5%;
+  margin: 5%;
+  margin-left: 10%;
+}
+
+#snowsib2 {
+  width: 1000px;
+  height: 500px;
+  opacity: 0;
+}
+
+#snowsib2 img {
+  object-fit: contain;
+  width: 99vw;
+  position: absolute;
+}
+
+#thunderContainer {
+  z-index: 5;
+  position: absolute;
+  left: calc(50vw - 500px);
+  top: 30%;
+  width: 1000px;
+  height: 560px;
+  background-color: none;
+  opacity: 100%;
+  overflow: hidden;
+}
+
+#thundersib1 {
+  width: 3vh;
+  height: 3vh;
+  float: left;
+  background-color: #364F59;
+  z-index: 12;
+  position: fixed;
+  top: 5%;
+  margin: 5%;
+  margin-left: 15%;
+}
+
+#thundersib2 {
+  width: 1000px;
+  height: 590px;
+  opacity: 0;
+  background-color: #090f11;
+}
+
+#thundersib img {
+  object-fit: contain;
+  width: 99vw;
+  position: absolute;
+}
+
+
+
+#sceneContainer {
+  position: absolute;
+  left: calc(50vw - 500px);
+  top: 15%;
+  width: 1000px;
+  height: 750px;
+  background-color: black;
+  overflow: hidden;
+}
+
+/* ~ selects sibling elements */
+#rainsib1:hover~#rainsib2 {
+  opacity: 100%;
+}
+
+#snowsib1:hover~#snowsib2 {
+  opacity: 100%;
+}
+
+#thundersib1:hover~#thundersib2 {
+  opacity: 80%;
+}
+
+
+#controller {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  float: left;
+}
+
+/* + selects only the next item */
+/* #controller:hover + .reciever {
     background-color: black;
   } */
 
 img {
-    max-width: 100%;
-    max-height: auto;
-    z-index: 0;
-    display:block;
+  max-width: 100%;
+  max-height: auto;
+  z-index: 0;
+  display: block;
 }
 
 
 
-  
-  @media only screen and (max-width: 1000px) {
-    .center {
-      margin-left: 0vw;
-      margin-top: 0vw;
-      width: 100vw;
-      height: 100vh;
-    }
+
+@media only screen and (max-width: 1000px) {
+  .center {
+    margin-left: 0vw;
+    margin-top: 0vw;
+    width: 100vw;
+    height: 100vh;
   }
+}
