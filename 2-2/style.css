@@ -2,39 +2,20 @@ body {
   background-color: black;
   color: white;
   vertical-align: middle;
-  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   min-height: 100vh;
   margin-bottom: 0;
 }
 
-#sceneContainer {
-  position: absolute;
-  left: calc(50vw - 500px);
-  top: 15%;
-  width: 1000px;
-  height: 500px;
-  background-color: darkslategrey;
-  overflow: hidden;
-}
-
 .scene {
   z-index: 4;
   position: absolute;
-  top: 10%;
+  top: 7.3%;
   left: 0;
   width: 100%;
+  height: auto;
 
 }
-
-.center {
-  width: 40vw;
-  height: 70vh;
-  margin-left: 30vw;
-  margin-top: 15vh;
-  z-index: 2;
-}
-
 
 .weather {
   z-index: 5;
@@ -48,7 +29,7 @@ body {
   z-index: 5;
   position: absolute;
   left: calc(50vw - 500px);
-  top: 21.5%;
+  top: 21%;
   width: 1000px;
   height: 560px;
   background-color: none;
@@ -57,14 +38,17 @@ body {
 }
 
 #rainsib1 {
-  width: 3vh;
-  height: 3vh;
+  width: 25px;
+  height: 25px;
   float: left;
   background-color: #79A4BD;
   z-index: 12;
   position: fixed;
-  top: 5%;
-  margin: 5%;
+  top: 15%;
+  left: 35%;
+  /* margin: 5%; */
+  /* margin-left: 40vh; */
+  transform: translate(-50%, -50%)
 }
 
 #rainsib2 {
@@ -77,11 +61,12 @@ body {
   object-fit: contain;
   scale: 1.2;
 }
+
 #snowContainer {
   z-index: 5;
   position: absolute;
   left: calc(50vw - 500px);
-  top: 21.5%;
+  top: 21%;
   width: 1000px;
   height: 560px;
   background-color: none;
@@ -90,15 +75,17 @@ body {
 }
 
 #snowsib1 {
-  width: 3vh;
-  height: 3vh;
+  width: 25px;
+  height: 25px;
   float: left;
   background-color: #6894A6;
   z-index: 12;
   position: fixed;
-  top: 5%;
-  margin: 5%;
-  margin-left: 10%;
+  top: 15%;
+  left: 45%;
+  /* margin: 5%; */
+  /* margin-left: 40vh; */
+  transform: translate(-50%, -50%)
 }
 
 #snowsib2 {
@@ -109,47 +96,41 @@ body {
 
 #snowsib2 img {
   object-fit: contain;
-  width: 99vw;
-  position: absolute;
+  width: 100%;
 }
 
 #thunderContainer {
   z-index: 5;
   position: absolute;
   left: calc(50vw - 500px);
-  top: 30%;
+  top: 20.4%;
   width: 1000px;
-  height: 560px;
+  height: 565px;
   background-color: none;
   opacity: 100%;
   overflow: hidden;
 }
 
 #thundersib1 {
-  width: 3vh;
-  height: 3vh;
+  width: 25px;
+  height: 25px;
   float: left;
   background-color: #364F59;
   z-index: 12;
   position: fixed;
-  top: 5%;
-  margin: 5%;
-  margin-left: 15%;
+  top: 15%;
+  left: 55%;
+  /* margin: 5%; */
+  /* margin-left: 40vh; */
+  transform: translate(-55%, -50%)
 }
 
 #thundersib2 {
   width: 1000px;
-  height: 590px;
+  height: 700px;
   opacity: 0;
   background-color: #090f11;
 }
-
-#thundersib img {
-  object-fit: contain;
-  width: 99vw;
-  position: absolute;
-}
-
 
 
 #sceneContainer {
@@ -161,6 +142,7 @@ body {
   background-color: black;
   overflow: hidden;
 }
+
 
 /* ~ selects sibling elements */
 #rainsib1:hover~#rainsib2 {
@@ -175,19 +157,6 @@ body {
   opacity: 80%;
 }
 
-
-#controller {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  float: left;
-}
-
-/* + selects only the next item */
-/* #controller:hover + .reciever {
-    background-color: black;
-  } */
-
 img {
   max-width: 100%;
   max-height: auto;
@@ -195,14 +164,36 @@ img {
   display: block;
 }
 
-
-
-
-@media only screen and (max-width: 1000px) {
-  .center {
-    margin-left: 0vw;
-    margin-top: 0vw;
-    width: 100vw;
-    height: 100vh;
-  }
+.item {
+  z-index: 14;
+  cursor: pointer;
+  position: fixed;
+  top: 15%;
+  left: 65%;
+  transform: translate(-55%, -50%)
 }
+
+#toggleText {
+  display: none;
+}
+
+.hiddenText {
+  display: none;
+  position: fixed;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8px;
+  font-family: monospace;
+  letter-spacing: 0.5vw;
+}
+
+.item img {
+  width: 35px; 
+  height: 35px;
+}
+
+#toggleText:checked + .item + .hiddenText {
+  display: block;
+}
+
