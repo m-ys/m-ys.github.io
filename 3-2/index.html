@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Sunshine</title>
+
+</head>
+
+<body>
+    <script src="sketch.js"></script>
+    <div id = "title" class="text"> 
+        GOOD MORNING, SUNSHINE! 
+    </div>
+      <div id = "description" class= "text">
+        Wake up with the sun with our Sunrise applet.<br><br>
+       Within 15 minutes of the sunrise occurring, you will be greeted with the  melody of “Everybody Loves the Sunshine,” because there's no better way to start the morning.
+      </div>
+    <audio id="music" autoplay controls loop class="audio" class="text">
+        <source src="Assets/everybody-loves-the-sunshine.mp3" type="audio/mp3">
+        
+    </audio>
+
+    <div id="sky"></div>
+
+    <div id="sun"></div>
+    <div id="spotify-logo"></div>
+
+   
+<div id="bottomText">
+    To wake up bright, early, and joyful, connect to the applet today!
+ </div>
+ <a href="https://ifttt.com/applets/bxThHujB-if-sunrise-occurs-at-1633-spruce-st-philadelphia-pa-19103-then-start-playback" 
+    target="_blank" class="button">CONNECT</a>
+<div id="spacer"> </div>
+</body>
+</html>
+
+
+<!-- Questions
+- 
+
+-->
+
+
+<!-- TO DO:
+- Debug sun parallax JS so it stays in centre of page at 50% scroll
+- Debug spotify logo JS so it replaces sun at 75% scroll
+- Add text at top of page to explain/sell concept
+- Add small circular play/pause botton on top right corner to control music
+- Test!
+-->

@@ -1,0 +1,136 @@
+body, html {
+    margin: 0;
+    min-height: 500vh;
+}
+.text {
+  z-index: 10;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+ }
+
+.audio {
+  position: absolute;
+  top: 65vh;
+  left: calc(50vw - 16.5vh);
+  z-index: 12;
+  animation: fade 5s;
+}
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+ #description {
+  font-size: 26px;
+  margin: 60px;
+  color: whitesmoke;
+  width: 20;
+ }
+
+#title {
+  font-size: 70px;
+  margin: 60;
+  top: -20vh;
+  left: calc(50vw - 40.5vh);
+  color: #d9a71e;
+  animation: scroll 10s linear infinite;
+}
+
+#bottomText {
+  font-size: 26px;
+  color: whitesmoke;
+  z-index: 12;
+  bottom: -400vh;
+  left: calc(50vw - 50vh);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  margin-bottom: -40px;
+ }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+#spacer {
+  position: absolute;
+  bottom: -420vh;
+  width: 20px;
+  height: 2px;
+  background-color: pink;
+}
+
+#sky {
+    position: fixed;
+    width: 100vw;
+    height: 500vh;
+    background-color: black;
+    z-index: 1;
+    /*transition: background-color 1s ease;*/
+  }
+
+  #sun {
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    top: 100%;
+    left: calc(50vw - 25vh);
+    background-color: #ffdf0d;
+    z-index: 2;
+  }
+
+  #spotify-logo {
+    position: fixed;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    top: 100%;
+    left: calc(50vw - 25vh);
+    background: url('Assets/spotify-logo.png') center center no-repeat;
+    background-size: cover;
+    z-index: 3;
+      /* Initial opacity to start the fade-in effect */
+      opacity: 0;
+      /* Add transition property for a smooth transition effect */
+      transition: opacity 0.2s ease-in-out;
+    }
+    
+    /* Add the 'fade-in' class to trigger the opacity change */
+    #spotify-logo.fade-in {
+      opacity: 1;
+    }
+
+  
+
+  .button {
+    position: absolute;
+    left: calc(50vw - 13.5vh);
+    bottom: -415vh;
+    padding: 20px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 350;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #1DB954;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 4;
+}
+
+.button:hover {
+    background-color: #2fed72;
+}
