@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    color: white;
+    vertical-align: middle;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  a:active {
+    color: white;
+    text-decoration: underline;
+  }
+
+#container {
+    display: flex;
+    height: 100vh; 
+    align-items: center; 
+}
+
+#left-column {
+    width: 200px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#window {
+
+}
+
+#preview {
+    position: absolute;
+    background-color: pink;
+    width: 200px;
+    height: 150px;
+    top: 10vh;
+    left: 5vw;
+}
+
+#main-container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#window {
+    position: absolute;
+    background-color: blue;
+    width: 40vw;
+    /* make by vh vw */
+    height: 250px;
+    top: 35vh;
+    left: 40vw;
+}
+
+#captions {
+     
+}
+
