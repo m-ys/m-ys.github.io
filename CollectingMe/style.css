@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100;
+    overflow: hidden;
+    background-color: black;
+      color: white;
+      vertical-align: middle;
+      font-family: 'Courier New', Courier, monospace;
+      overflow-y: auto;
+  }
+  
+  p {
+   
+    margin-top: 10px;
+    padding: 20px;
+  }
+  
+  #journalWrapper {
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: left;
+    border-radius: 3px;
+    border: .5px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  a:active {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  
+  #sceneContainer {
+    position: absolute;
+    top: 2%;
+    left: calc(50vw - 500px);
+    width: 1000px;
+    height: auto;
+    background-color: black;
+  }
+  
+  
+  table.center {
+    position: relative;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  th, td {
+    padding-right: 5px;
+    padding-left: 15px;
+    font-size:small;
+    font-family: monospace;
+    color: white;
+    vertical-align: top;
+  }
+  caption {
+    padding-bottom: 10px;
+    font-size: small;
+    font-family: monospace;
+    color: white;
+    letter-spacing: 3px;
+    font-style: oblique;
+  }
+  
